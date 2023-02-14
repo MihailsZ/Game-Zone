@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1" />
+<title>Game Zone</title>
+<link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+</head>
+<body>
+<div id="container">
+  <div id="body_image">&nbsp;</div>
+  <div id="page_header">
+    <h1><span>Game Zone</span></h1>
+    <h3><span>Welcome to Game Zone</span></h3>
+    <div class="clearthis">&nbsp;</div>
+  </div>
+  <div id="page_menu">
+    <ul>
+      <li class="online"><a href="index.html"><span>Online</span></a><span></span></li>
+      <li class="downloads"><a href="downloads.html"><span>Downloads</span></a><span></span></li>
+
+      <li class="about"><a href="about_us.html"><span>About Zone</span></a><span></span></li>
+    </ul>
+  </div>
+  <div id="page_forms">
+    <div id="userlogin">
+      <div id="userlogin_header">
+        <h2><span>User Login</span></h2>
+      </div>
+      <form action="#">
+        <div id="field_username"> <strong><span>Log in:</span></strong>
+          <input type="text" />
+        </div>
+        <div id="field_password"> <strong><span>Password:</span></strong>
+          <input type="text" />
+        </div>
+        <div id="button_enter">
+          <input type="image" src="images/userlogin_enter.gif" alt="Enter" class="button" />
+        </div>
+      </form>
+      <div id="userlogin_links"> <a href="#" id="register"><strong><span>Register >>></span></strong></a> <br />
+        <a href="#" id="notregister"><strong><span>Not Registered Yet?</span></strong></a> </div>
+    </div>
+    <div id="sitesearch_header">
+      <h2><span>Site Search</span></h2>
+    </div>
+    <div id="sitesearch">
+      <form action="#">
+        <div>
+          <input type="text" />
+          <input type="image" src="images/sitesearch_button.gif" alt="Go" class="button" />
+        </div>
+        <div class="clearthis">&nbsp;</div>
+      </form>
+    </div>
+  </div>
+  <div id="content_body">
+    <div id="reviews_box">
+      <div id="reviews">
+        <div class="content_header">
+          <h2><span>You can calculate:</span></h2>
+        </div>
+        <div class="content_entry">
+          <div class="thumbnail"></div>
+          <div class="entry_text">
+
+
+            
+  <h2> Price</h2>
+  <p id = "izvade1">... </p>
+  <h2> Number</h2>
+  <p id = "izvade2">... </p>
+    <h2> Total costs</h2>
+  <p id = "izvade3">... </p>       
+            
+<button type="button" id="button" onclick="uzdevums1()">Calculate</button>
+  <script>
+function uzdevums1(){
+ buing = prompt("You want to BUY or SALE?");
+ cena = Number(prompt("How much euro does one item cost? "));
+ skaits = Number(prompt("How much do you want to buy?"));
+  
+izvade1.innerHTML = +cena;
+izvade2.innerHTML = +skaits;
+izvade3.innerHTML = cena * skaits;
+
+  
+if (buing == "BUY") { 
+   izvade4.innerHTML = +skaits + " items"; 
+   izvade6.innerHTML = +cena * skaits + " eiro";
+   izvade5.innerHTML = +cena * skaits * 0.98 + " eiro";
+}  
+else if (buing == "SALE"){
+  izvade5.innerHTML = +skaits + " items"; 
+  izvade7.innerHTML = +cena * skaits + " eiro";
+  izvade4.innerHTML = +cena * skaits * 0.98 + " eiro";
+}
+else {
+  izvade4.innerHTML = "ERROR"; 
+  izvade6.innerHTML = "ERROR";
+  izvade5.innerHTML = "ERROR";
+  izvade7.innerHTML = "ERROR";
+} 
+}
+</script>  
+    
+          </div>
+          <div class="clearthis">&nbsp;</div>
+        </div>
+
+      </div>
+    </div>
+    <div id="playnow_box">
+      <div id="playnow">
+        <div class="content_header">
+          <h2><span>Play Now</span></h2>
+        </div>
+        <div class="content_entry">
+          <div class="thumbnail"></div>
+          <div class="entry_text">
+           
+           <h2>You`ll get</h2>
+<p id = "izvade4">... </p>
+<h2>Buyer will get</h2>
+<p id = "izvade5">... </p>
+            
+<h2>You will pay</h2>
+<p id = "izvade6">... </p>
+ <h2>Buyer will pay</h2>
+<p id = "izvade7">... </p> 
+          </div>
+          <div class="clearthis">&nbsp;</div>
+        </div>
+        <div class="content_entry">
+            
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="clearthis_contentbody">&nbsp;</div>
+</div>
+<div id="page_footer"> Copyright <a href="#">www.yoursite.com</a> | designed by <a href="http://www.freewebsitetemplates.com">free website templates</a> </div>
+</body>
+</html>
